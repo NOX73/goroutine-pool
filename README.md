@@ -12,10 +12,9 @@ func Worker (a, b int) int {
 
 p := pool.NewPool(Worker, 10)
 
-w := p.GetWorker()
-
 // ....
 
+w := p.GetWorker()
 result, _ := w.Perform(1,2)
 
 ```
